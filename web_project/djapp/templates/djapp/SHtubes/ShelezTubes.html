@@ -1,0 +1,97 @@
+{% extends 'djapp/base.html' %}
+
+{% block title %}
+{%load static%}
+
+Железобетонные Трубы
+{%endblock%}
+
+{% block content %}
+{%load static%}
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/Truba2.jpg' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Пустотельные трубы</p>
+          <div class="btn-group">
+            <a href=" {% url 'PustotelieTubes' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="image_holder">
+              <img src="{% static 'images/Truba2.jpg' %}">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Индустриальные трубы</p>
+              <div class="btn-group">
+                <a href=" {% url 'IndustrialTubes' %}">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="image_holder">
+              <img src="{% static 'images/Truba2.jpg' %}">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Рекреационные трубы</p>
+              <div class="btn-group">
+                <a href=" {% url 'RecreatTubes' %}">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="image_holder">
+              <img src="{% static 'images/Truba2.jpg' %}">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Статичные трубы</p>
+              <div class="btn-group">
+                <a href=" {% url 'StaticTubes' %}">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+              <div class="image_holder">
+                <img src="{% static 'images/Truba2.jpg' %}">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Центрифужные трубы</p>
+                <div class="btn-group">
+                  <a href=" {% url 'CentriFugeTubes' %}">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+</div>
+
+
+
+{% endblock %}

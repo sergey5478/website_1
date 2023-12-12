@@ -1,0 +1,38 @@
+{% extends 'djapp/base.html' %}
+
+{% block title %}
+{%load static%}
+
+Пустотелые Трубы
+{%endblock%}
+
+{% block content %}
+{%load static%}
+
+<div class="Characteristics">
+    Характеристики
+    <div class="CBox">
+        <div class="CCBox">
+            <div class="picture">
+                <img src="{% static 'images/Truba2.jpg' %}">
+            </div>
+            <div class="other">
+                <div class="Info">Диаметр
+                    <div>314 мм</div>
+                </div>
+                <div class="Info">Толщина стенки
+                    <div>10 мм</div>
+                </div>
+                <div class="Info">Материал изготовления
+                    <div>Железобетон</div>
+                </div>
+                <div class="Info">ГОСТ
+                    <div>8732-78 Группа В62</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

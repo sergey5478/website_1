@@ -1,0 +1,107 @@
+{% extends 'djapp/base.html' %}
+
+{% block title %}
+{%load static%}
+Швеллеры
+{%endblock%}
+
+{% block content %}
+{%load static%}
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/Shveller.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Швеллеры 18 мм (Прямой)</p>
+          <div class="btn-group">
+            <a href=" {% url '18P' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="col">
+        <div class="card shadow-sm">
+          <div class="image_holder">
+            <img src="{% static 'images/Shveller.png' %}">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Швеллеры 18 мм (Угол)</p>
+            <div class="btn-group">
+              <a href=" {% url '18U' %}">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="image_holder">
+            <img src="{% static 'images/Shveller.png' %}">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Швеллеры 20 мм (Угол)</p>
+            <div class="btn-group">
+              <a href=" {% url '20u' %}">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="image_holder">
+            <img src="{% static 'images/Shveller.png' %}">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Швеллеры 20 мм (Прямой)</p>
+            <div class="btn-group">
+              <a href=" {% url '20p' %}">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="image_holder">
+            <img src="{% static 'images/Shveller.png' %}">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Швеллеры 24 мм (Прямой)</p>
+            <div class="btn-group">
+              <a href=" {% url '24p' %}">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="image_holder">
+            <img src="{% static 'images/Shveller.png' %}">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Швеллеры 24 мм (Угол)</p>
+            <div class="btn-group">
+              <a href=" {% url '24u' %}">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+          
+
+  </div>
+{% endblock %}

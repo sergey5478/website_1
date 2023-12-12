@@ -1,0 +1,125 @@
+{% extends 'djapp/base.html' %}
+
+{% block title %}
+{%load static%}
+
+Главная
+{%endblock%}
+
+{% block content %}
+{%load static%}
+
+<div class="DivHead1"><h1>Трубы</h1></div>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <div class="col">
+    <div class="card shadow-sm">
+      <div class="image_holder">
+        <img src="{% static 'images/Truba1.jpg' %}">
+      </div>
+      <div class="card-body">
+        <p class="card-text">Стальные трубы</p>
+        <div class="btn-group">
+          <a href=" {% url 'Stalnie_Trubi' %}">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/Truba2.jpg' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Железобетонные трубы</p>
+          <div class="btn-group">
+            <a href=" {% url 'ShelezobetTubes' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="DivHead1"><h1>Уголки и швеллеры</h1></div>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/Angle.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Уголки</p>
+          <div class="btn-group">
+            <a href=" {% url 'angle' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/Shveller.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Швеллеры</p>
+          <div class="btn-group">
+            <a href=" {% url 'Shvellers' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+  <div class="DivHead1"><h1>Износостойкая сталь</h1></div>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/SteelSheet.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Листовая сталь</p>
+          <div class="btn-group">
+            <a href=" {% url 'Lsteel' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/InsSteel.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Инструментальная сталь</p>
+          <div class="btn-group">
+            <a href=" {% url 'Isteel' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+
+</div>
+{% endblock %}

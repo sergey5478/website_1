@@ -1,0 +1,82 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet"type="text/css" href="{% static 'hellodj/style.css'%}">
+
+</head>
+<body>
+  <div class = "wrapper">
+        <header class="header_bar">
+          <div class="header_container">
+
+
+          <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <span class="fs-4">CтальнойШедевр</span>
+          </a>
+
+          <div class="dropup">
+            <span class="dropdown">
+              <button class="dropdown-button"></button>
+                    <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <div class="nav">
+                        <a href=" {% url 'main_page' %} " aria-current="page">
+                            <div class="nav">Главная</div>
+                        </a>
+                      </div >
+                      </li>
+                      <li class="nav-item">
+                        <div class="nav">
+                        <a href=" {% url 'FAQ_page' %} " aria-current="page">
+                            <div class="nav">FAQ</div>
+                        </a>
+                      </div >
+                      </li>
+                      <li class="nav-item">
+                        <div class="nav">
+                        <a href=" {% url 'about_page' %} " aria-current="page">
+                            <div class="nav">О нас</div>
+                        </a>
+                      </div >
+                      </li>
+                    </ul>
+              </span>
+            </div>
+        </header>
+
+
+      <div id="openModal" class="modal">
+        <div class="modal-dialog">
+
+        <form method="POST" class="form" >
+            {% csrf_token %}
+            <a href="/#close" title="Close" class="close">Закрыть</a>
+            {{ form.as_p }}
+                <button type="submit" class="form__submit">
+                  <a href="/">Отправить</a>
+                </button>
+                <div class="modal-content">
+              </div>
+        </form>
+            </div>
+        </div>
+    <div class="container">
+      {% block content %} {% endblock %}
+      </div>
+        <div>
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <span class="contact-us">
+              <a href="base#openModal">
+                <button class="contact-us-button">Кнопка для связи с нами</button>
+              </a>
+            </span>
+            <p class="col-md-4 mb-0 text-body-secondary">© 2023 СтальнойШедевр, все права защищены</p>
+          </footer>
+        </div>
+    </div>
+  </body>
+</html>

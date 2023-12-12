@@ -1,0 +1,33 @@
+{% extends 'djapp/base.html' %}
+
+{% block title %}
+Товары
+{%endblock%}
+
+{% block content %}
+
+<table border="10" rules="ALL" cols="7" rows="9" cellpadding="5" cellspacing="4">
+    <thead>
+        <tr>
+            <th>Стальные трубы</th>
+            <th>СТЕНКА, ММ</th>
+            <th>ДЛИНА, М</th>
+            <th>ВЕС 1 П/М, КГ</th>
+            <th>ЦЕНА 1 П/М, РУБ.</th>
+            <th>ЦЕНА ЗА ТОННУ, РУБ.</th>
+    </thead>
+    <tbody>
+        {% for el in Trub %}
+        <tr>
+            <th>{{ el.name }}</th>
+            <th>{{ el.wall }}</th>
+            <th>{{ el.length }}</th>
+            <th>{{ el.weight }}</th>
+            <th>{{ el.price }}</th>
+            <th>{{ el.priceT }}</th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

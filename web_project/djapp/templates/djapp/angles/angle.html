@@ -1,0 +1,157 @@
+{% extends 'djapp/base.html' %}
+
+{% block title %}
+{%load static%}
+Уголки
+{%endblock%}
+
+{% block content %}
+{%load static%}
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/Angle.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Уголки 25мм</p>
+          <div class="btn-group">
+            <a href=" {% url 'angle25' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/Angle.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Уголки 48мм</p>
+          <div class="btn-group">
+            <a href=" {% url 'angle40' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+  <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/Angle.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Уголки 63мм</p>
+          <div class="btn-group">
+            <a href=" {% url 'angle63' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+  <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/Angle.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Уголки 75мм</p>
+          <div class="btn-group">
+            <a href=" {% url 'angle75' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+  <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/Angle.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Уголки 90мм</p>
+          <div class="btn-group">
+            <a href=" {% url 'angle90' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+  <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/Angle.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Уголки 32,3мм</p>
+          <div class="btn-group">
+            <a href=" {% url 'angle323' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+  <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/Angle.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Уголки 32,4мм</p>
+          <div class="btn-group">
+            <a href=" {% url 'angle324' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+  <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/Angle.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Уголки 50,4мм</p>
+          <div class="btn-group">
+            <a href=" {% url 'angle504' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+  <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/Angle.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Уголки 50,5 мм</p>
+          <div class="btn-group">
+            <a href=" {% url 'angle505' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+{% endblock %}

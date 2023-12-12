@@ -1,0 +1,112 @@
+{% extends 'djapp/base.html' %}
+
+{% block title %}
+{%load static%}
+Листовая сталь
+{%endblock%}
+
+{% block content %}
+{%load static%}
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/SteelSheet.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Износостойкая сталь 1,6 M</p>
+          <div class="btn-group">
+            <a href=" {% url 'L16' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="col">
+        <div class="card shadow-sm">
+          <div class="image_holder">
+            <img src="{% static 'images/SteelSheet.png' %}">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Износостойкая сталь 1,7 M</p>
+            <div class="btn-group">
+              <a href=" {% url 'L17' %}">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>  
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="image_holder">
+            <img src="{% static 'images/SteelSheet.png' %}">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Износостойкая сталь 3,6 M</p>
+            <div class="btn-group">
+              <a href=" {% url 'L36' %}">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="image_holder">
+            <img src="{% static 'images/SteelSheet.png' %}">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Износостойкая сталь 3,9 M</p>
+            <div class="btn-group">
+              <a href=" {% url 'L39' %}">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="image_holder">
+            <img src="{% static 'images/SteelSheet.png' %}">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Износостойкая сталь 1,55 M</p>
+            <div class="btn-group">
+              <a href=" {% url 'L155' %}">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="image_holder">
+            <img src="{% static 'images/SteelSheet.png' %}">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Износостойкая сталь 1,65 M</p>
+            <div class="btn-group">
+              <a href=" {% url 'L165' %}">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+
+    </div>
+{% endblock %}

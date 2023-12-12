@@ -1,0 +1,81 @@
+{% extends 'djapp/base.html' %}
+
+{% block title %}
+{%load static%}
+Инструментальная сталь
+{%endblock%}
+
+{% block content %}
+{%load static%}
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <div class="image_holder">
+          <img src="{% static 'images/InsSteel.png' %}">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Инструментальная сталь</p>
+          <div class="btn-group">
+            <a href=" {% url 'I13' %}">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="col">
+        <div class="card shadow-sm">
+          <div class="image_holder">
+            <img src="{% static 'images/InsSteel.png' %}">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Инструментальная сталь</p>
+            <div class="btn-group">
+              <a href=" {% url 'I14' %}">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+  
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="image_holder">
+            <img src="{% static 'images/InsSteel.png' %}">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Инструментальная сталь</p>
+            <div class="btn-group">
+              <a href=" {% url 'I135' %}">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+  
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="image_holder">
+            <img src="{% static 'images/InsSteel.png' %}">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Инструментальная сталь</p>
+            <div class="btn-group">
+              <a href=" {% url 'I145' %}">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+  
+
+</div>
+
+{% endblock %} 
